@@ -20,6 +20,6 @@ t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Co
 
 // Define icon for the wizard.
 if (TYPO3_MODE == 'BE') {
-	$TBE_MODULES_EXT['xMOD_db_new_content_el']['addElClasses'][$pluginSignature . '_wizicon'] = t3lib_extMgm::extPath($_EXTKEY) . 'Resources/Private/PHP/class.' . $_EXTKEY . '_wizicon.php';
+	$TBE_MODULES_EXT['xMOD_db_new_content_el']['addElClasses'][$_EXTKEY . '_wizicon'] = t3lib_extMgm::extPath($_EXTKEY) . 'Resources/Private/PHP/class.' . $_EXTKEY . '_wizicon.php';
 }
 ?>
