@@ -54,15 +54,12 @@ class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Co
 	 * @return string
 	 */
 	public function getJavaScript($widgetId) {
-		$showTeam = ($this->settings['team'] !== '' ? true : false);
-		$javaScript = <<<EOT
-var bfvwidget_{$widgetId} = new BFVLigaWidget();
-bfvwidget_{$widgetId}.setzeLigaNr('{$this->settings['league']}');
-if ({$showTeam}) {
-	bfvwidget_{$widgetId}.setzeVereinNr('{$this->settings['team']}');
-}
-bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');
-EOT;
+		$javaScript = "var bfvwidget_{$widgetId} = new BFVLigaWidget();";
+		$javaScript .= "bfvwidget_{$widgetId}.setzeLigaNr('{$this->settings['league']}');";
+		if ($this->settings['team'] !== '') {
+			$javaScript .= "bfvwidget_{$widgetId}.setzeVereinNr('{$this->settings['team']}');";
+		}
+		$javaScript .= "bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');";
 		return $javaScript;
 	}
 
