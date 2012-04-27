@@ -3,7 +3,7 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>Options</sheetTitle>
+					<sheetTitle>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:options</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>

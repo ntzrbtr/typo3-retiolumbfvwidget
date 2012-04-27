@@ -6,6 +6,7 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
+			<label index="options">Options</label>
 			<label index="league">Number of league to display</label>
 			<label index="team">Number of team to highlight</label>
 			<label index="tab">Tab to open at load</label>
