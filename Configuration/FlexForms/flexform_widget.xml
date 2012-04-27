@@ -13,6 +13,7 @@
 							<config>
 								<type>input</type>
 								<size>10</size>
+								<eval>trim,required</eval>
 							</config>
 						</TCEforms>
 					</settings.league>
@@ -22,6 +23,7 @@
 							<config>
 								<type>input</type>
 								<size>10</size>
+								<eval>trim</eval>
 								<default></default>
 							</config>
 						</TCEforms>
@@ -30,8 +32,27 @@
 						<TCEforms>
 							<label>Tab to open at load</label>
 							<config>
-								<type>input</type>
-								<size>10</size>
+								<type>select</type>
+								<size>1</size>
+								<multiple>0</multiple>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">zeigeErgebnisse</numIndex>
+										<numIndex index="1">Results</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">zeigeTabelle</numIndex>
+										<numIndex index="1">Table</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">zeigeVorschau</numIndex>
+										<numIndex index="1">Preview</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">zeigeFairplay</numIndex>
+										<numIndex index="1">Fairplay</numIndex>
+									</numIndex>
+								</items>
 							</config>
 						</TCEforms>
 					</settings.tab>
