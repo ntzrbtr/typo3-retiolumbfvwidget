@@ -1,0 +1,42 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Options</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.league>
+						<TCEforms>
+							<label>Number of league to display</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+							</config>
+						</TCEforms>
+					</settings.league>
+					<settings.team>
+						<TCEforms>
+							<label>Number of team to highlight</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.team>
+					<settings.tab>
+						<TCEforms>
+							<label>Tab to open at load</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+							</config>
+						</TCEforms>
+					</settings.tab>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
