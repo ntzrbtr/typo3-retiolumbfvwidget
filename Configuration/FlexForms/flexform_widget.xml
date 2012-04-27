@@ -37,20 +37,20 @@
 								<multiple>0</multiple>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">zeigeErgebnisse</numIndex>
-										<numIndex index="1">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.results</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.results</numIndex>
+										<numIndex index="1">zeigeErgebnisse</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">zeigeTabelle</numIndex>
-										<numIndex index="1">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.table</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.table</numIndex>
+										<numIndex index="1">zeigeTabelle</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">zeigeVorschau</numIndex>
-										<numIndex index="1">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.preview</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.preview</numIndex>
+										<numIndex index="1">zeigeVorschau</numIndex>
 									</numIndex>
 									<numIndex index="3" type="array">
-										<numIndex index="0">zeigeFairplay</numIndex>
-										<numIndex index="1">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.fairplay</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.fairplay</numIndex>
+										<numIndex index="1">zeigeFairplay</numIndex>
 									</numIndex>
 								</items>
 							</config>
