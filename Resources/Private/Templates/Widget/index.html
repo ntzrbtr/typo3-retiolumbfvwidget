@@ -1,13 +1,13 @@
 <f:layout name="default" />
 
 <f:section name="content">
-	<div id="bfvwidget-{widgetId}"><f:translate key="load" /></div>
+	<div id="bfvwidget_{widgetId}"><f:translate key="load" /></div>
 	<script type="text/javascript">
-	var bfvwidget-{widgetId} = new BFVLigaWidget();
-	bfvwidget-{widgetId}.setzeLigaNr('{settings.league}');
+	var bfvwidget_{widgetId} = new BFVLigaWidget();
+	bfvwidget_{widgetId}.setzeLigaNr('{settings.league}');
 	<f:if condition="{settings.team}">
-		bfvwidget-{widgetId}.setzeVereinNr('{settings.team}');
+		bfvwidget_{widgetId}.setzeVereinNr('{settings.team}');
 	</f:if>
-	bfvwidget-{widgetId}.{settings.tab}('bfvwidget-{widgetId}');
+	bfvwidget_{widgetId}.{settings.tab}('bfvwidget_{widgetId}');
 	</script>
 </f:section>
