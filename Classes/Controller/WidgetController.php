@@ -38,7 +38,11 @@ class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Co
 	 */
 	public function indexAction() {
 		// Create an id based on the settings.
-		$this->view->assign('widgetId', md5(serialize($this->settings)));
+		$this->view->assign('widgetId', md5(serialize($this->settings) . uniqid()));
+		
+		// Add required JavaScript.
+		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
+		$pageRenderer->addJsFile('http://ergebnisse.bfv.de/javascript/widgets/tmwrWidgetFunctions.js');
 	}
 
 }
