@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>flexform</type>
+		<description>Language labels for the flexform of the widget plugin</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="league">Number of league to display</label>
+			<label index="team">Number of team to highlight</label>
+			<label index="tab">Tab to open at load</label>
+			<label index="tab.results">Results</label>
+			<label index="tab.table">Table</label>
+			<label index="tab.preview">Preview</label>
+			<label index="tab.fairplay">Fairplay</label>
+		</languageKey>
+	</data>
+</T3locallang>
