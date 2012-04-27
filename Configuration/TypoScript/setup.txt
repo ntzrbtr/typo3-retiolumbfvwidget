@@ -1,0 +1,30 @@
+plugin.tx_retiolumbfvwidget {
+	view {
+		templateRootPath = {$plugin.tx_retiolumbfvwidget.view.templateRootPath}
+		partialRootPath = {$plugin.tx_retiolumbfvwidget.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_retiolumbfvwidget.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_retiolumbfvwidget.persistence.storagePid}
+	}
+}
+
+plugin.tx_retiolumbfvwidget._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-retiolumbfvwidget table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-retiolumbfvwidget table th {
+		font-weight:bold;
+	}
+
+	.tx-retiolumbfvwidget table td {
+		vertical-align:top;
+	}
+)
