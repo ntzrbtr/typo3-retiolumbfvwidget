@@ -2,12 +2,4 @@
 
 <f:section name="content">
 	<div id="bfvwidget_{widgetId}"><f:translate key="load" /></div>
-	<script type="text/javascript">
-	var bfvwidget_{widgetId} = new BFVLigaWidget();
-	bfvwidget_{widgetId}.setzeLigaNr('{settings.league}');
-	<f:if condition="{settings.team}">
-		bfvwidget_{widgetId}.setzeVereinNr('{settings.team}');
-	</f:if>
-	bfvwidget_{widgetId}.{settings.tab}('bfvwidget_{widgetId}');
-	</script>
 </f:section>

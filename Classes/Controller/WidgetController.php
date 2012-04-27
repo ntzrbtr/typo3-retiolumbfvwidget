@@ -38,11 +38,32 @@ class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Co
 	 */
 	public function indexAction() {
 		// Create an id based on the settings.
-		$this->view->assign('widgetId', md5(serialize($this->settings) . uniqid()));
+		$widgetId = md5(serialize($this->settings) . uniqid());
+		$this->view->assign('widgetId', $widgetId);
 		
 		// Add required JavaScript.
 		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
 		$pageRenderer->addJsFile('http://ergebnisse.bfv.de/javascript/widgets/tmwrWidgetFunctions.js');
+		$pageRenderer->addJsInlineCode('bfvwidget_' . $widgetId, $this->getJavaScript($widgetId));
+	}
+	
+	/**
+	 * Get the JavaScript code needed to initialize the widget.
+	 * 
+	 * @param string $widgetId Id of widget to initialize
+	 * @return string
+	 */
+	public function getJavaScript($widgetId) {
+		$showTeam = ($this->settings['team'] !== '' ? true : false);
+		$javaScript = <<<EOT
+var bfvwidget_{$widgetId} = new BFVLigaWidget();
+bfvwidget_{$widgetId}.setzeLigaNr('{$this->settings['league']}');
+if ({$showTeam}) {
+	bfvwidget_{$widgetId}.setzeVereinNr('{$this->settings['team']}');
+}
+bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');
+EOT;
+		return $javaScript;
 	}
 
 }
