@@ -6,6 +6,7 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
+			<label index="load">Loading league widget from BFV...</label>
 		</languageKey>
 	</data>
 </T3locallang>
