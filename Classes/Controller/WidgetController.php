@@ -30,5 +30,14 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Controller_ActionController {
+	
+	/**
+	 * Display the BFV widget.
+	 * 
+	 * @return void 
+	 */
+	public function indexAction() {
+	}
+
 }
 ?>
