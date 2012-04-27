@@ -7,12 +7,22 @@
 	<data type="array">
 		<languageKey index="default" type="array">
 			<label index="options">Options</label>
-			<label index="league">Number of league to display</label>
-			<label index="team">Number of team to highlight</label>
+			<label index="league">League number</label>
+			<label index="team">Team number</label>
 			<label index="tab">Tab to open at load</label>
 			<label index="tab.results">Results</label>
 			<label index="tab.table">Table</label>
 			<label index="tab.preview">Preview</label>
+			<label index="tab.fairplay">Fairplay</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="options">Optionen</label>
+			<label index="league">Liganummer</label>
+			<label index="team">Vereinsnummer</label>
+			<label index="tab">Funktion beim Start</label>
+			<label index="tab.results">Ergebnisse</label>
+			<label index="tab.table">Tabelle</label>
+			<label index="tab.preview">Vorschau</label>
 			<label index="tab.fairplay">Fairplay</label>
 		</languageKey>
 	</data>
