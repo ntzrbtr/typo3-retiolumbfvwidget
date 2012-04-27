@@ -15,7 +15,7 @@ Tx_Extbase_Utility_Extension::registerPlugin(
 
 // Register FlexForm for plugin.
 $pluginSignature = strtolower($_EXTKEY . '_Bfvwidget');
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
 t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_widget.xml');
 
 // Define icon for the wizard.
