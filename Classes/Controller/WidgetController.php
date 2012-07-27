@@ -54,6 +54,7 @@ class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Co
 	 * @return string
 	 */
 	public function getJavaScript($widgetId) {
+        // Collect code parts.
         $javaScriptLines = array();
 		$javaScriptLines[] = "var bfvwidget_{$widgetId} = new BFVLigaWidget();";
 		$javaScriptLines[] = "bfvwidget_{$widgetId}.setzeLigaNr('{$this->settings['league']}');";
@@ -61,7 +62,18 @@ class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Co
 			$javaScriptLines[] = "bfvwidget_{$widgetId}.setzeVereinNr('{$this->settings['team']}');";
 		}
 		$javaScriptLines[] = "bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');";
-		return implode("\n", $javaScriptLines);
+
+        // Combine into one block.
+		$javaScript = implode("\n", $javaScriptLines);
+
+        // Wrap with onload handler and return.
+        $javaScript = <<<EOT
+function initBfvWidget{$widgetId}() {
+{$javaScript}
+}
+window.addEventListener('load', initBfvWidget{$widgetId}, false);
+EOT;
+        return $javaScript;
 	}
 
 }
