@@ -43,7 +43,7 @@ class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Co
 
 		// Add required JavaScript.
 		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
-		$pageRenderer->addJsFile('http://ergebnisse.bfv.de/javascript/widgets/tmwrWidgetFunctions.js');
+		$pageRenderer->addJsFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
 		$pageRenderer->addJsInlineCode('bfvwidget_' . $widgetId, $this->getJavaScript($widgetId));
 	}
 
