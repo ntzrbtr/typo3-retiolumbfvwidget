@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "retiolumbfvwidget".
 #
-# Auto generated 27-07-2012 11:08
+# Auto generated 27-07-2012 11:09
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -27,7 +27,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'constraints' => array(
 		'depends' => array(
 			'extbase' => '1.3',
