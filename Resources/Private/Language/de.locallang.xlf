@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-26T23:34:03Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for the BFV widget extension in the FRONTEND</description>
+			<authorName>Thomas Off</authorName>
+			<authorEmail>retiolum@googlemail.com</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="load" approved="yes">
+			<source>Loading league widget from BFV...</source>
+			<target>Lade BFV-Liga-Widget ...</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
