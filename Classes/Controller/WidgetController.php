@@ -1,5 +1,7 @@
 <?php
 
+namespace Retiolum\Retiolumbfvwidget\Controller;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -23,13 +25,15 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+
 /**
  * Controller for displaying the widget.
  *
  * @package retiolumbfvwidget
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Controller_ActionController {
+class WidgetController extends ActionController {
 
 	/**
 	 * Display the BFV widget.
@@ -77,4 +81,3 @@ EOT;
 	}
 
 }
-?>

@@ -1,4 +1,5 @@
 <?php
+
 /***************************************************************
  *  Copyright notice
  *
@@ -30,43 +31,26 @@
  */
 class retiolumbfvwidget_wizicon {
 
-	const KEY = 'retiolumbfvwidget';
+	const EXTENSION_KEY = 'retiolumbfvwidget';
 
 	/**
-	 * Processing the wizard items array.
+	 * Processing the wizard items array to add icon for our extension.
 	 *
 	 * @param array $wizardItems The wizard items
 	 * @return array
 	 */
 	public function proc($wizardItems) {
-		// Load language labels.
-		$locallang = $this->includeLocalLang();
-
-		// Add icons.
-		$wizardItems['plugins_tx_' . self::KEY] = array(
-			'icon'		=> t3lib_extMgm::extRelPath(self::KEY) . 'Resources/Public/Icons/bfvwidget.gif',
-			'title'		=> $GLOBALS['LANG']->getLLL('bfvwidget_title', $locallang),
-			'description'	=> $GLOBALS['LANG']->getLLL('bfvwidget_description', $locallang),
-			'params'	=> '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . self::KEY . '_bfvwidget'
+		$wizardItems['plugins_tx_' . self::EXTENSION_KEY] = array(
+			'icon'			=> \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath(self::EXTENSION_KEY) . 'Resources/Public/Icons/bfvwidget.gif',
+			'title'			=> \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('bfvwidget_title', self::EXTENSION_KEY),
+			'description'	=> \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('bfvwidget_description', self::EXTENSION_KEY),
+			'params'		=> '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . self::EXTENSION_KEY . '_bfvwidget'
 		);
 
-		// Return modified array.
 		return $wizardItems;
 	}
-
-	/**
-	 * Reads the [extDir]/locallang_be.xml and returns the $LOCAL_LANG array found in that file.
-	 *
-	 * @return
-	 */
-	protected function includeLocalLang() {
-		$file = t3lib_extMgm::extPath(self::KEY) . 'Resources/Private/Language/locallang_be.xml';
-		return t3lib_div::readLLXMLfile($file, $GLOBALS['LANG']->lang);
-	}
 }
-
 
 if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/news/Resources/Private/Php/class.retiolumbfvwidget_wizicon.php']) {
 	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/news/Resources/Private/Php/class.retiolumbfvwidget_wizicon.php']);
 }
-?>

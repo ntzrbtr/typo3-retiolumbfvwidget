@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 // Define plugin.
-Tx_Extbase_Utility_Extension::configurePlugin(
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 	$_EXTKEY,
 	'Bfvwidget',
 	array(
@@ -13,4 +13,3 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	array(
 	)
 );
-?>
