@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 
 // Define plugin.
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-	$_EXTKEY,
+	'Retiolum.' . $_EXTKEY,
 	'Bfvwidget',
 	array(
 		'Widget' => 'index',
