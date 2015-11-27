@@ -9,38 +9,38 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-		<trans-unit id="league" approved="yes">
-			<source>League number</source>
-			<target>Liganummer</target>
-		</trans-unit>
-		<trans-unit id="options" approved="yes">
-			<source>Options</source>
-			<target>Optionen</target>
-		</trans-unit>
-		<trans-unit id="tab" approved="yes">
-			<source>Tab to open at load</source>
-			<target>Funktion beim Start</target>
-		</trans-unit>
-		<trans-unit id="tab.fairplay" approved="yes">
-			<source>Fairplay</source>
-			<target>Fairplay</target>
-		</trans-unit>
-		<trans-unit id="tab.preview" approved="yes">
-			<source>Preview</source>
-			<target>Vorschau</target>
-		</trans-unit>
-		<trans-unit id="tab.results" approved="yes">
-			<source>Results</source>
-			<target>Ergebnisse</target>
-		</trans-unit>
-		<trans-unit id="tab.table" approved="yes">
-			<source>Table</source>
-			<target>Tabelle</target>
-		</trans-unit>
-		<trans-unit id="team" approved="yes">
-			<source>Team number</source>
-			<target>Vereinsnummer</target>
-		</trans-unit>
+			<trans-unit id="league" approved="yes">
+				<source>League number</source>
+				<target>Liganummer</target>
+			</trans-unit>
+			<trans-unit id="options" approved="yes">
+				<source>Options</source>
+				<target>Optionen</target>
+			</trans-unit>
+			<trans-unit id="tab" approved="yes">
+				<source>Tab to open at load</source>
+				<target>Funktion beim Start</target>
+			</trans-unit>
+			<trans-unit id="tab.fairplay" approved="yes">
+				<source>Fairplay</source>
+				<target>Fairplay</target>
+			</trans-unit>
+			<trans-unit id="tab.preview" approved="yes">
+				<source>Preview</source>
+				<target>Vorschau</target>
+			</trans-unit>
+			<trans-unit id="tab.results" approved="yes">
+				<source>Results</source>
+				<target>Ergebnisse</target>
+			</trans-unit>
+			<trans-unit id="tab.table" approved="yes">
+				<source>Table</source>
+				<target>Tabelle</target>
+			</trans-unit>
+			<trans-unit id="team" approved="yes">
+				<source>Team number</source>
+				<target>Vereinsnummer</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

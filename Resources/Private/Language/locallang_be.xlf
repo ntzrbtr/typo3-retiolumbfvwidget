@@ -9,15 +9,15 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-		<trans-unit id="bfvwidget_description">
-			<source>Show the latest results, current table and upcoming matches of your football team</source>
-		</trans-unit>
-		<trans-unit id="bfvwidget_title">
-			<source>BFV widget</source>
-		</trans-unit>
-		<trans-unit id="extension_title">
-			<source>BFV widget</source>
-		</trans-unit>
+			<trans-unit id="bfvwidget_description">
+				<source>Show the latest results, current table and upcoming matches of your football team.</source>
+			</trans-unit>
+			<trans-unit id="bfvwidget_title">
+				<source>BFV widget</source>
+			</trans-unit>
+			<trans-unit id="extension_title">
+				<source>BFV widget</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

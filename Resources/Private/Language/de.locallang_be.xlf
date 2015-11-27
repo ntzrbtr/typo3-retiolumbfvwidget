@@ -9,18 +9,18 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-		<trans-unit id="bfvwidget_description" approved="yes">
-			<source>Show the latest results, current table and upcoming matches of your football team</source>
-			<target>Zeigt Ergebnisse, aktuelle Tabelle und die nächsten Spiele deiner Fußballmannschaft an</target>
-		</trans-unit>
-		<trans-unit id="bfvwidget_title" approved="yes">
-			<source>BFV widget</source>
-			<target>BFV-Widget</target>
-		</trans-unit>
-		<trans-unit id="extension_title" approved="yes">
-			<source>BFV widget</source>
-			<target>BFV-Widget</target>
-		</trans-unit>
+			<trans-unit id="bfvwidget_description" approved="yes">
+				<source>Show the latest results, current table and upcoming matches of your football team.</source>
+				<target>Zeigt Ergebnisse, aktuelle Tabelle und die nächsten Spiele deiner Fußballmannschaft an.</target>
+			</trans-unit>
+			<trans-unit id="bfvwidget_title" approved="yes">
+				<source>BFV widget</source>
+				<target>BFV-Widget</target>
+			</trans-unit>
+			<trans-unit id="extension_title" approved="yes">
+				<source>BFV widget</source>
+				<target>BFV-Widget</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

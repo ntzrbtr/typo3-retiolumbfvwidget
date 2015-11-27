@@ -9,9 +9,9 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-		<trans-unit id="load">
-			<source>Loading league widget from BFV...</source>
-		</trans-unit>
+			<trans-unit id="load">
+				<source>Loading league widget from BFV...</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
