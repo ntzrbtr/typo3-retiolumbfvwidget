@@ -37,8 +37,6 @@ class WidgetController extends ActionController {
 
 	/**
 	 * Display the BFV widget.
-	 *
-	 * @return void
 	 */
 	public function indexAction() {
 		// Create an id based on the settings.
@@ -57,7 +55,7 @@ class WidgetController extends ActionController {
 	 * @param string $widgetId Id of widget to initialize
 	 * @return string
 	 */
-	public function getJavaScript($widgetId) {
+	protected function getJavaScript($widgetId) {
         // Collect code parts.
         $javaScriptLines = array();
 		$javaScriptLines[] = "var bfvwidget_{$widgetId} = new BFVLigaWidget();";
@@ -68,7 +66,7 @@ class WidgetController extends ActionController {
 		$javaScriptLines[] = "bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');";
 
         // Combine into one block.
-		$javaScript = implode("\n", $javaScriptLines);
+		$javaScript = implode(PHP_EOL, $javaScriptLines);
 
         // Wrap with onload handler and return.
         $javaScript = <<<EOT
@@ -77,6 +75,7 @@ function initBfvWidget{$widgetId}() {
 }
 window.addEventListener('load', initBfvWidget{$widgetId}, false);
 EOT;
+
         return $javaScript;
 	}
 
