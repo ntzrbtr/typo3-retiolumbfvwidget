@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	'Retiolum.' . $_EXTKEY,
 	'Bfvwidget',
-	'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_be.xml:bfvwidget_title'
+	'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_be.xlf:bfvwidget_title'
 );
 
 // Define the plugin signature.
