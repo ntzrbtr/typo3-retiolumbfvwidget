@@ -40,9 +40,15 @@ class WidgetController extends ActionController {
 	 * Display the BFV widget.
 	 */
 	public function indexAction() {
-		// Create an id based on the settings.
-		$widgetId = md5(serialize($this->settings) . uniqid());
+		// Get extension key for later use.
+		$extKey = $this->request->getControllerExtensionKey();
+
+		// Create an data object and encode it as JSON.
+		$widgetId = uniqid($extKey);
 		$this->view->assign('widgetId', $widgetId);
+		$widgetData = $this->settings;
+		$widgetData['id'] = $widgetId;
+		$this->view->assign('widgetData', json_encode($widgetData, JSON_FORCE_OBJECT));
 
 		// Add required JavaScript.
 		/** @var \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer */
