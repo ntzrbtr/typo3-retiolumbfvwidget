@@ -4,6 +4,6 @@ mod.wizards.newContentElement.wizardItems.plugins.elements.retiolum_bfvwidget {
 	icon = ../typo3conf/ext/retiolumbfvwidget/Resources/Public/Icons/bfvwidget.gif
 	tt_content_defValues {
 		CType = list
-		list_type = retiolum_bfvwidget
+		list_type = retiolumbfvwidget_bfvwidget
 	}
 }
