@@ -44,9 +44,10 @@ class WidgetController extends ActionController {
 		$this->view->assign('widgetId', $widgetId);
 
 		// Add required JavaScript.
+		/** @var \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer */
 		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
-		$pageRenderer->addJsFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
-		$pageRenderer->addJsInlineCode('bfvwidget_' . $widgetId, $this->getJavaScript($widgetId));
+		$pageRenderer->addJsFooterFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js', 'text/javascript', FALSE, FALSE, '', TRUE);
+		$pageRenderer->addJsFooterInlineCode('bfvwidget_' . $widgetId, $this->getJavaScript($widgetId));
 	}
 
 	/**
