@@ -17,3 +17,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignat
 
 // Define icon for the wizard.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:retiolumbfvwidget/Configuration/TSconfig/PageTS.txt">');
+
+// Add static TypoScript template.
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'EXT:' . $_EXTKEY . '/Configuration/TypoScript/', $_EXTKEY);
