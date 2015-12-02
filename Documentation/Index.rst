@@ -15,7 +15,7 @@ BFV widget
 .. only:: html
 
 	:Classification:
-		extension_key
+		retiolumbfvwidget
 
 	:Version:
 		|release|
@@ -24,10 +24,9 @@ BFV widget
 		en
 
 	:Description:
-		enter description.
+		This extension provides a simple plugin to display the BFV (Bayerischer Fußball-Verband) widget; this way you can show the latest results, current table and upcoming matches of your football team from Bavaria.
 
 	:Keywords:
-		comma,separated,list,keywords
 
 	:Copyright:
 		2015
@@ -36,7 +35,7 @@ BFV widget
 		Thomas Off
 
 	:Email:
-		author@example.com
+		retiolum@googlemail.com
 
 	:License:
 		This document is published under the Open Publication License
