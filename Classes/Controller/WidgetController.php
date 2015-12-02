@@ -25,6 +25,7 @@ namespace Retiolum\Retiolumbfvwidget\Controller;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -46,38 +47,9 @@ class WidgetController extends ActionController {
 		// Add required JavaScript.
 		/** @var \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer */
 		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
-		$pageRenderer->addJsFooterFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js', 'text/javascript', FALSE, FALSE, '', TRUE);
-		$pageRenderer->addJsFooterInlineCode('bfvwidget_' . $widgetId, $this->getJavaScript($widgetId));
-	}
-
-	/**
-	 * Get the JavaScript code needed to initialize the widget.
-	 *
-	 * @param string $widgetId Id of widget to initialize
-	 * @return string
-	 */
-	protected function getJavaScript($widgetId) {
-        // Collect code parts.
-        $javaScriptLines = array();
-		$javaScriptLines[] = "var bfvwidget_{$widgetId} = new BFVLigaWidget();";
-		$javaScriptLines[] = "bfvwidget_{$widgetId}.setzeLigaNr('{$this->settings['league']}');";
-		if ($this->settings['team'] !== '') {
-			$javaScriptLines[] = "bfvwidget_{$widgetId}.setzeVereinNr('{$this->settings['team']}');";
-		}
-		$javaScriptLines[] = "bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');";
-
-        // Combine into one block.
-		$javaScript = implode(PHP_EOL, $javaScriptLines);
-
-        // Wrap with onload handler and return.
-        $javaScript = <<<EOT
-function initBfvWidget{$widgetId}() {
-{$javaScript}
-}
-window.addEventListener('load', initBfvWidget{$widgetId}, false);
-EOT;
-
-        return $javaScript;
+		$pageRenderer->addJsFooterFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
+		$extRelPath = ExtensionManagementUtility::siteRelPath('retiolumbfvwidget');
+		$pageRenderer->addJsFooterFile($extRelPath . 'Resources/Public/Scripts/retiolumbfvwidget_loader.js');
 	}
 
 }

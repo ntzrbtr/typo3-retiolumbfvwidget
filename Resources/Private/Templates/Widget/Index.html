@@ -2,4 +2,14 @@
 
 <f:section name="content">
 	<div id="bfvwidget_{widgetId}"><f:translate key="load" /></div>
+	<script type="text/javascript">
+		var retiolumbfvwidget = retiolumbfvwidget || [];
+		retiolumbfvwidget.push({
+			<f:comment><!-- Useless f:comment block to get Fluid back to doing its work --></f:comment>
+			id: 'bfvwidget_{widgetId}',
+			league: '{settings.league}',
+			team: '{settings.team}',
+			tab: '{settings.tab}'
+		});
+	</script>
 </f:section>
