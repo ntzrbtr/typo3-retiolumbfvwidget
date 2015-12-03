@@ -11,39 +11,19 @@
 Users manual
 ============
 
-Documentation of how to use the extension, how it works, how to apply it, if it's a website plugin.
+Usage of the extension is as simple as one can imagine:
 
-Language should be non-technical, explaining, using small examples. Don't use to many acronyms unless they have been explained.
+- Install the extension.
+- Add the plugin to the desired page.
+- Enter league number in the options flexform; additionally enter a team number (for highlighting of your favourite team) and change the default tab shown when the widget loads.
 
-Examples: For the "News" plugin this would be a manual showing how to create the news items, explaining the options etc.
-
-Provide screenshots of a neutral Backend such as the Backend of the Introduction Package for instance. Have in mind that the User manual could possibly be re-used in a larger documentation compilation, for example when a company generates a documentation for its client.
-
-Target group: **Users**
-
-.. figure:: ../Images/UserManual/BackendView.png
+.. figure:: ../Images/UserManual/plugin.jpg
 	:width: 500px
-	:alt: Backend view
+	:alt: Plugin options in the backend
 
-	Default Backend view (caption of the image)
-
-	The Backend view of TYPO3 after the user has clicked on module "Page". (legend of the image)
+	Plugin options in the backend
 
 
-Link to official documentation
-------------------------------
+Note: To use the widget on a website it is required to register your website at the BFV website; to do so, go to http://www.bfv.de, navigate to the league you wish to use and click the link that says “Diese Liga als BFV-Widget auf meiner Homepage anzeigen”; on the following page, you can login or register as a new user and then use the widget.
 
-Sphinx makes it easy to link to official TYPO3 documentation:
-
-- :ref:`TYPO3 Tutorial for Editors <t3editors:start>`
-- :ref:`Getting Started Tutorial <t3start:start>`
-
-and you may even link to a very specific chapter explaining how to :ref:`create a browser condition <t3tsref:condition-browser>` within the TypoScript Reference.
-
-For a complete reference of available cross-link prefixes, please consult file ``_make/conf.py``.
-
-
-FAQ
-^^^
-
-Possible subsection: FAQ
+Additional information is provided after login at the BFV widget in the form of two documents: one containing the terms and conditions, the other one being a technical documentation on using the widget. Both documents are also available from the extension's page at Forge (http://forge.typo3.org/projects/extension-retiolumbfvwidget).

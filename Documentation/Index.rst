@@ -56,5 +56,4 @@ BFV widget
 
 	Introduction/Index
 	UsersManual/Index
-	AdministratorManual/Index
 	Links

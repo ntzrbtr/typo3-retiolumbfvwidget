@@ -6,7 +6,7 @@
 conf.py:
   copyright: 2015
   project: BFV widget
-  version: 1.1
+  version: 1.1.0
   release: 1.1.0
   latex_documents:
   - - Index
