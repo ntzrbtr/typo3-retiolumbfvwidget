@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-26T23:34:50Z">
+		<header>
+			<type>flexform</type>
+			<description>Language labels for the flexform of the widget plugin</description>
+			<authorName>Thomas Off</authorName>
+			<authorEmail>retiolum@googlemail.com</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="league">
+				<source>League number</source>
+			</trans-unit>
+			<trans-unit id="options">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="tab">
+				<source>Tab to open at load</source>
+			</trans-unit>
+			<trans-unit id="tab.fairplay">
+				<source>Fairplay</source>
+			</trans-unit>
+			<trans-unit id="tab.preview">
+				<source>Preview</source>
+			</trans-unit>
+			<trans-unit id="tab.results">
+				<source>Results</source>
+			</trans-unit>
+			<trans-unit id="tab.table">
+				<source>Table</source>
+			</trans-unit>
+			<trans-unit id="team">
+				<source>Team number</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

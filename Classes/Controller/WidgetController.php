@@ -1,5 +1,7 @@
 <?php
 
+namespace Retiolum\Retiolumbfvwidget\Controller;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -23,58 +25,37 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+
 /**
  * Controller for displaying the widget.
  *
  * @package retiolumbfvwidget
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Retiolumbfvwidget_Controller_WidgetController extends Tx_Extbase_MVC_Controller_ActionController {
+class WidgetController extends ActionController {
 
 	/**
 	 * Display the BFV widget.
-	 *
-	 * @return void
 	 */
 	public function indexAction() {
-		// Create an id based on the settings.
-		$widgetId = md5(serialize($this->settings) . uniqid());
+		// Get extension key for later use.
+		$extKey = $this->request->getControllerExtensionKey();
+
+		// Create an data object and encode it as JSON.
+		$widgetId = uniqid($extKey);
 		$this->view->assign('widgetId', $widgetId);
+		$widgetData = $this->settings;
+		$widgetData['id'] = $widgetId;
+		$this->view->assign('widgetData', json_encode($widgetData, JSON_FORCE_OBJECT));
 
 		// Add required JavaScript.
+		/** @var \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer */
 		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
-		$pageRenderer->addJsFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
-		$pageRenderer->addJsInlineCode('bfvwidget_' . $widgetId, $this->getJavaScript($widgetId));
-	}
-
-	/**
-	 * Get the JavaScript code needed to initialize the widget.
-	 *
-	 * @param string $widgetId Id of widget to initialize
-	 * @return string
-	 */
-	public function getJavaScript($widgetId) {
-        // Collect code parts.
-        $javaScriptLines = array();
-		$javaScriptLines[] = "var bfvwidget_{$widgetId} = new BFVLigaWidget();";
-		$javaScriptLines[] = "bfvwidget_{$widgetId}.setzeLigaNr('{$this->settings['league']}');";
-		if ($this->settings['team'] !== '') {
-			$javaScriptLines[] = "bfvwidget_{$widgetId}.setzeVereinNr('{$this->settings['team']}');";
-		}
-		$javaScriptLines[] = "bfvwidget_{$widgetId}.{$this->settings['tab']}('bfvwidget_{$widgetId}');";
-
-        // Combine into one block.
-		$javaScript = implode("\n", $javaScriptLines);
-
-        // Wrap with onload handler and return.
-        $javaScript = <<<EOT
-function initBfvWidget{$widgetId}() {
-{$javaScript}
-}
-window.addEventListener('load', initBfvWidget{$widgetId}, false);
-EOT;
-        return $javaScript;
+		$pageRenderer->addJsFooterFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
+		$extRelPath = ExtensionManagementUtility::siteRelPath('retiolumbfvwidget');
+		$pageRenderer->addJsFooterFile($extRelPath . 'Resources/Public/Scripts/retiolumbfvwidget_loader.js');
 	}
 
 }
-?>

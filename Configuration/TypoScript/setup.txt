@@ -1,0 +1,16 @@
+plugin.tx_retiolumbfvwidget {
+	view {
+		templateRootPaths {
+			0 = EXT:retiolumbfvwidget/Resources/Private/Templates/
+			1 = {$plugin.tx_retiolumbfvwidget.view.templateRootPath}
+		}
+		partialRootPaths {
+			0 = EXT:retiolumbfvwidget/Resources/Private/Partials/
+			1 = {$plugin.tx_retiolumbfvwidget.view.partialRootPath}
+		}
+		layoutRootPaths {
+			0 = EXT:retiolumbfvwidget/Resources/Private/Layouts/
+			1 = {$plugin.tx_retiolumbfvwidget.view.layoutRootPath}
+		}
+	}
+}

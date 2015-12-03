@@ -1,0 +1,9 @@
+mod.wizards.newContentElement.wizardItems.plugins.elements.retiolum_bfvwidget {
+	title = LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_be.xlf:bfvwidget_title
+	description = LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_be.xlf:bfvwidget_description
+	icon = ../typo3conf/ext/retiolumbfvwidget/Resources/Public/Icons/bfvwidget.gif
+	tt_content_defValues {
+		CType = list
+		list_type = retiolumbfvwidget_bfvwidget
+	}
+}

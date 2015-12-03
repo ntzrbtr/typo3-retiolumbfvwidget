@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-26T23:34:30Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for the BFV widget extension in the BACKEND</description>
+			<authorName>Thomas Off</authorName>
+			<authorEmail>retiolum@googlemail.com</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="bfvwidget_description" approved="yes">
+				<source>Show the latest results, current table and upcoming matches of your football team.</source>
+				<target>Zeigt Ergebnisse, aktuelle Tabelle und die nächsten Spiele deiner Fußballmannschaft an.</target>
+			</trans-unit>
+			<trans-unit id="bfvwidget_title" approved="yes">
+				<source>BFV widget</source>
+				<target>BFV-Widget</target>
+			</trans-unit>
+			<trans-unit id="extension_title" approved="yes">
+				<source>BFV widget</source>
+				<target>BFV-Widget</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -7,13 +7,13 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:options</sheetTitle>
+					<sheetTitle>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:options</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<settings.league>
 						<TCEforms>
-							<label>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:league</label>
+							<label>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:league</label>
 							<config>
 								<type>input</type>
 								<size>10</size>
@@ -23,7 +23,7 @@
 					</settings.league>
 					<settings.team>
 						<TCEforms>
-							<label>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:team</label>
+							<label>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:team</label>
 							<config>
 								<type>input</type>
 								<size>10</size>
@@ -34,26 +34,26 @@
 					</settings.team>
 					<settings.tab>
 						<TCEforms>
-							<label>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab</label>
+							<label>LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:tab</label>
 							<config>
 								<type>select</type>
 								<size>1</size>
 								<multiple>0</multiple>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.results</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:tab.results</numIndex>
 										<numIndex index="1">zeigeErgebnisse</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.table</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:tab.table</numIndex>
 										<numIndex index="1">zeigeTabelle</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.preview</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:tab.preview</numIndex>
 										<numIndex index="1">zeigeVorschau</numIndex>
 									</numIndex>
 									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xml:tab.fairplay</numIndex>
+										<numIndex index="0">LLL:EXT:retiolumbfvwidget/Resources/Private/Language/locallang_flexform_widget.xlf:tab.fairplay</numIndex>
 										<numIndex index="1">zeigeFairplay</numIndex>
 									</numIndex>
 								</items>
