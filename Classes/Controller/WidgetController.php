@@ -30,9 +30,6 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
  * Controller for displaying the widget.
- *
- * @package retiolumbfvwidget
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class WidgetController extends ActionController {
 
