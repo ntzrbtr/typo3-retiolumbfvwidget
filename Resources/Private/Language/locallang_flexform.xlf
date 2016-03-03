@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-26T23:34:50Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-26T23:34:50Z">
 		<header>
 			<type>flexform</type>
 			<description>Language labels for the flexform of the widget plugin</description>
@@ -9,37 +9,29 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-			<trans-unit id="league" approved="yes">
+			<trans-unit id="legacy.league">
 				<source>League number</source>
-				<target>Liganummer</target>
 			</trans-unit>
-			<trans-unit id="options" approved="yes">
+			<trans-unit id="legacy.options">
 				<source>Options</source>
-				<target>Optionen</target>
 			</trans-unit>
-			<trans-unit id="tab" approved="yes">
+			<trans-unit id="legacy.tab">
 				<source>Tab to open at load</source>
-				<target>Funktion beim Start</target>
 			</trans-unit>
-			<trans-unit id="tab.fairplay" approved="yes">
+			<trans-unit id="legacy.tab.fairplay">
 				<source>Fairplay</source>
-				<target>Fairplay</target>
 			</trans-unit>
-			<trans-unit id="tab.preview" approved="yes">
+			<trans-unit id="legacy.tab.preview">
 				<source>Preview</source>
-				<target>Vorschau</target>
 			</trans-unit>
-			<trans-unit id="tab.results" approved="yes">
+			<trans-unit id="legacy.tab.results">
 				<source>Results</source>
-				<target>Ergebnisse</target>
 			</trans-unit>
-			<trans-unit id="tab.table" approved="yes">
+			<trans-unit id="legacy.tab.table">
 				<source>Table</source>
-				<target>Tabelle</target>
 			</trans-unit>
-			<trans-unit id="team" approved="yes">
+			<trans-unit id="legacy.team">
 				<source>Team number</source>
-				<target>Vereinsnummer</target>
 			</trans-unit>
 		</body>
 	</file>

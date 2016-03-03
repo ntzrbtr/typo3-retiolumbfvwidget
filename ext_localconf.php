@@ -4,12 +4,12 @@ if (!defined('TYPO3_MODE')) {
 }
 
 $boot = function($_EXTKEY) {
-	// Define plugin.
+	// Define plugin (legacy).
 	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 		'Retiolum.' . $_EXTKEY,
-		'Bfvwidget',
+		'bfvwidget',
 		array(
-			'Widget' => 'index',
+			'Widget' => 'legacy',
 		),
 		array(
 		)

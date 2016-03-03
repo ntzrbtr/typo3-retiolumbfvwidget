@@ -4,19 +4,17 @@ if (!defined('TYPO3_MODE')) {
 }
 
 $boot = function($_EXTKEY) {
-	// Register plugin.
+	// Register plugin and add Flexform (legacy).
 	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 		'Retiolum.' . $_EXTKEY,
-		'Bfvwidget',
+		'bfvwidget',
 		'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_be.xlf:bfvwidget_title'
 	);
-
-	// Register FlexForm for plugin.
-	$pluginSignature = strtolower($_EXTKEY . '_Bfvwidget');
+	$pluginSignature = strtolower($_EXTKEY . '_bfvwidget');
 	$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_widget.xml');
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_legacy.xml');
 
-	// Define icon for the wizard.
+	// Define icons for the content wizard.
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TSconfig/PageTS.txt">');
 
 	// Add static TypoScript template.

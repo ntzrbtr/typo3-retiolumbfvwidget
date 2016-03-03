@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-26T23:34:50Z">
+		<header>
+			<type>flexform</type>
+			<description>Language labels for the flexform of the widget plugin</description>
+			<authorName>Thomas Off</authorName>
+			<authorEmail>retiolum@googlemail.com</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="legacy.league" approved="yes">
+				<source>League number</source>
+				<target>Liganummer</target>
+			</trans-unit>
+			<trans-unit id="legacy.options" approved="yes">
+				<source>Options</source>
+				<target>Optionen</target>
+			</trans-unit>
+			<trans-unit id="legacy.tab" approved="yes">
+				<source>Tab to open at load</source>
+				<target>Funktion beim Start</target>
+			</trans-unit>
+			<trans-unit id="legacy.tab.fairplay" approved="yes">
+				<source>Fairplay</source>
+				<target>Fairplay</target>
+			</trans-unit>
+			<trans-unit id="legacy.tab.preview" approved="yes">
+				<source>Preview</source>
+				<target>Vorschau</target>
+			</trans-unit>
+			<trans-unit id="legacy.tab.results" approved="yes">
+				<source>Results</source>
+				<target>Ergebnisse</target>
+			</trans-unit>
+			<trans-unit id="legacy.tab.table" approved="yes">
+				<source>Table</source>
+				<target>Tabelle</target>
+			</trans-unit>
+			<trans-unit id="legacy.team" approved="yes">
+				<source>Team number</source>
+				<target>Vereinsnummer</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

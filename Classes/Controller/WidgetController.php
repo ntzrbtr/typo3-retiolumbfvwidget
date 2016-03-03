@@ -34,25 +34,42 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 class WidgetController extends ActionController {
 
 	/**
-	 * Display the BFV widget.
+	 * Display the BFV widget (legacy).
 	 */
-	public function indexAction() {
-		// Get extension key for later use.
-		$extKey = $this->request->getControllerExtensionKey();
-
-		// Create an data object and encode it as JSON.
-		$widgetId = uniqid($extKey);
+	public function legacyAction() {
+		// Create a data object and encode it as JSON.
+		$widgetId = $this->getWidgetId();
 		$this->view->assign('widgetId', $widgetId);
 		$widgetData = $this->settings;
 		$widgetData['id'] = $widgetId;
 		$this->view->assign('widgetData', json_encode($widgetData, JSON_FORCE_OBJECT));
 
 		// Add required JavaScript.
+		$this->addJsFooterFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
+		$this->addJsFooterFile(ExtensionManagementUtility::siteRelPath('retiolumbfvwidget') . 'Resources/Public/Scripts/retiolumbfvwidget_loader.js');
+	}
+
+	/**
+	 * Get a widget container id.
+	 *
+	 * @return string
+	 */
+	protected function getWidgetId() {
+		$extKey = $this->request->getControllerExtensionKey();
+		$widgetId = uniqid($extKey);
+
+		return $widgetId;
+	}
+
+	/**
+	 * Add a JavaScript to the page footer.
+	 *
+	 * @param string $file Path to JavaScript file (local path or URL)
+	 */
+	protected function addJsFooterFile($file) {
 		/** @var \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer */
 		$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
-		$pageRenderer->addJsFooterFile('http://ergebnisse.bfv.de/javascript/widgets/bfvWidgetFunctions.js');
-		$extRelPath = ExtensionManagementUtility::siteRelPath('retiolumbfvwidget');
-		$pageRenderer->addJsFooterFile($extRelPath . 'Resources/Public/Scripts/retiolumbfvwidget_loader.js');
+		$pageRenderer->addJsFooterFile($file);
 	}
 
 }
