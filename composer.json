@@ -1,0 +1,16 @@
+{
+	"name": "retiolum/retiolumbfvwidget",
+	"type": "typo3-cms-extension",
+	"version": "1.2.0",
+	"description": "This extension provides a simple plugin to display the BFV (Bayerischer Fußball-Verband) widget; this way you can show the latest results, current table and upcoming matches of your football team from Bavaria.",
+	"homepage": "http://typo3.org",
+	"license": ["GPL-3.0+"],
+	"require": {
+		"typo3/cms-core": ">=6.2.0,<=7.6.99"
+	},
+	"autoload": {
+        "psr-4": {
+            "Retiolum\\Retiolumbfvwidget\\": "Classes"
+        }
+    }
+}
